@@ -1,0 +1,98 @@
+/* Style the navigation menu */
+body{
+  width: auto;
+  height:auto;
+  background-color:#ddd;
+}
+
+.top{
+  width: 1970px;
+  height: 100px;
+  background-color: #04af2f;
+  margin-left: 0%;
+  margin-left: 0%;
+  padding: 0%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+}
+.input{
+  display: flex;
+    flex-direction: column;
+    gap: 50px; 
+    align-items: center;
+}
+#age{
+  position: relative;
+  top: 150px;
+  bottom:100px;
+  align-items:center;
+}
+#postcode{
+  position: relative;
+  top: 170px;
+  bottom:100px;
+  align-items: center;
+}
+.button{
+  position: relative;
+  top: 170px;
+  align-items: center
+}
+#postcode, #age {
+  width: 300px; /* Adjust this value as needed */
+  height: 10px; /* Adjust this value as needed */
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* For WebKit browsers */
+  -moz-appearance: none; /* For Mozilla Firefox */
+  padding: 30px; /* Add some padding */
+  border: 0px solid #ccc; /* Add border */
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 576px) {
+  body{
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  body {
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body{
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+  }
+}
+

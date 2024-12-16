@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHS App</title>
+    <link rel="index" href="page2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <a href="index.html" class="active">Logo</a>
+
+
+    <div class="container">
+        <div id="page-2" class="hidden">
+            <h1>Local Services</h1>
+            <p>Select the service you're looking for:</p>
+            <select id="gps">
+                <option value="" disabled selected>Local GPs</option>
+                <option>GP 1</option>
+                <option>GP 2</option>
+                <option>GP 3</option>
+            </select>
+
+            <select id="opticians">
+                <option value="" disabled selected>Local Opticians</option>
+                <option>Optician 1</option>
+                <option>Optician 2</option>
+                <option>Optician 3</option>
+            </select>
+
+            <select id="dentists">
+                <option value="" disabled selected>Local Dentists</option>
+                <option>Dentist 1</option>
+                <option>Dentist 2</option>
+                <option>Dentist 3</option>
+            </select>
+
+            <select id="schools">
+                <option value="" disabled selected>Local Schools</option>
+                <option>School 1</option>
+                <option>School 2</option>
+                <option>School 3</option>
+            </select>
+
+            <button onclick="goBack()">Back</button>
+        </div>
+    </div>
+
+    <script>
+        function goToStep2() {
+            const postcode = document.getElementById('postcode').value.trim();
+            const age = document.getElementById('age').value.trim();
+            if (!postcode || !age) {
+                alert('Please fill in both fields.');
+                return;
+            }
+            document.getElementById('step-1').classList.add('hidden');
+            document.getElementById('step-2').classList.remove('hidden');
+        }
+        function goBack() {
+            document.getElementById('step-1').classList.remove('hidden');
+            document.getElementById('step-2').classList.add('hidden');
+        }
+    </script>
+
+</body>
+
+</html>
